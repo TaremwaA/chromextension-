@@ -1,0 +1,28 @@
+{
+
+    //Required
+    "name":"my photos list",
+    "version":"1.0",
+    "manifest_version":2,
+
+    //Recommended
+    //description shows when you hover the icon
+    "description":"to show photos as background",
+    "icons":{
+        "128":"icons/border.png"
+    },
+
+    //Type of action Browser,Page or none
+    //Since we want to change the background of the browser we are on
+    //we are using  browser action
+    "browser_action":{
+        "default_title":"Always have the this with you @",
+        "default_popup":"htmlfile/popup.html"
+    },
+
+    //Intent of app, what you will acces from the user
+    //The wild cards show that we can go on any site
+    "permissions":[
+        "http://*/*","https://*/*"
+    ]
+}
